@@ -43,7 +43,7 @@ export function Home() {
          maximumTrackTintColor='#ff0000'
          thumbTintColor='#392de9'
          value={size}
-         onValueChange={(value) => setSize(value.toFixed(0))}
+         onValueChange={(value) => setSize(Math.round(value))}
         />
       </View>
 
